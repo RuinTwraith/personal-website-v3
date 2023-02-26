@@ -1,0 +1,31 @@
+@import '../../styles/mixins.scss';
+
+:root {
+  --section-bg-color: rgb(248, 214, 228);
+}
+
+.section {
+  background-color: var(--section-bg-color);
+  text-align: center;
+
+  &__container {
+    @include page-max-width;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+}

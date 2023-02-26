@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--header-bg-color);
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  font-size: 2rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.247);
+  z-index: 2;
+
+  &__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+
+    color: #dbdc9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    // text-transform: uppercase;
+    // transform: rotate(90deg);
+  }
+  &__logo-img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.nav {
+  &__container {
+    list-style: none;
+    display: flex;
+
+    :not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__item {
+  }
+}

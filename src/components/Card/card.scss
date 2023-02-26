@@ -1,0 +1,103 @@
+@import '../../styles/utility.scss';
+
+:root {
+  --card-radius: 5px;
+  --link-bg-color: rgb(196, 11, 41);
+  --background: linear-gradient(
+    to bottom,
+    rgba(11, 19, 13, 0.2) 1%,
+    rgba(11, 19, 13, 0.8) 15%
+  );
+}
+.card {
+  border-radius: var(--card-radius);
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 28rem;
+
+  &:hover > &__text--hover {
+    top: 0;
+    background-color: rgba(11, 19, 13, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > .card__heading {
+      // margin-top: 3rem;
+    }
+  }
+
+  &:hover > &__img--hover {
+    transform: scale(1.1);
+    filter: blur(3px);
+  }
+
+  &:hover > &__link {
+    right: 0;
+    opacity: 1;
+  }
+
+  &__img {
+    height: 18rem;
+    width: 100%;
+    transition: 0.5s ease-out;
+    object-fit: cover;
+  }
+
+  &__link {
+    z-index: 1;
+    opacity: 0;
+    background-color: var(--link-bg-color);
+    position: absolute;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    border-radius: var(--card-radius);
+    top: 0;
+    right: -5rem;
+    transition: 0.4s ease;
+
+    display: flex;
+    gap: 0.5rem;
+
+    &:hover {
+      background-color: rgb(231, 42, 74);
+    }
+    &:active {
+      background-color: rgb(23, 74, 214);
+      transform: translateY(2px);
+    }
+
+    &--img {
+      width: 1.6rem;
+    }
+  }
+
+  &__text {
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: calc(100% - 4rem);
+    // top: 75%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: var(--background);
+    transition: 0.5s ease;
+    border-radius: var(--card-radius);
+    padding: 1rem;
+    color: var(--color-white);
+  }
+  &__heading {
+    transition: 0.3s ease-out;
+    font-size: 2.1rem;
+  }
+  &__description {
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+  }
+}
