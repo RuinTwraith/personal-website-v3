@@ -1,0 +1,101 @@
+:root {
+  --no-of-columns: 4;
+  --gap: 2rem;
+  --body-max-width: 1200px;
+  --default-body-max-height: 85vh;
+  --body-max-height: 85vh;
+  --body-overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  position: relative;
+
+  &__body {
+    max-width: var(--body-max-width);
+    display: grid;
+    grid-template-columns: repeat(var(--no-of-columns), minmax(0, 1fr));
+    align-items: start;
+    margin: 2rem auto;
+    column-gap: var(--gap);
+    max-height: var(--body-max-height);
+    overflow: var(--body-overflow);
+
+    &-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: var(--gap);
+    }
+
+    &--img {
+      position: relative;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, 0.25);
+      transition: 250ms ease-in-out;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        display: block;
+      }
+
+      &-caption {
+        font-size: 1.6rem;
+        bottom: 0.6rem;
+        right: 0.6rem;
+        position: absolute;
+        background: rgba(248, 250, 117, 0.733);
+        color: var(--color-black);
+        width: fit-content;
+        padding: 0.6rem 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all 250ms ease-in;
+      }
+    }
+  }
+
+  &__footer {
+    background: linear-gradient(to top, var(--photo-section-bg-color), transparent);
+    margin: auto;
+    padding: 6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      position: absolute;
+      bottom: -10rem;
+      width: fit-content;
+      padding: 2rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &-text {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(
+        to bottom,
+        transparent 60%,
+        rgba(241, 109, 230, 0.4) 0%
+      );
+      transition: 300ms ease;
+      background-repeat: no-repeat;
+
+      &:hover {
+        padding: 0 1rem;
+      }
+    }
+    &-icon {
+      width: 3rem;
+      animation: icon-animation 1s infinite;
+    }
+  }
+}

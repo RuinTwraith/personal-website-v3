@@ -1,32 +1,18 @@
 import React from 'react'
 import './card.scss'
 import linkImg from '../../assets/icons/link.png'
-import background from '../../assets/bg.jpg'
-import useImage from '../../hooks/useImage'
+import Image from '../Image'
 import '../../styles/_utility.scss'
 
 const Card = ({ name, description, link, folder, fileName, customClass }) => {
-  const { image, error } = useImage({ folder, fileName })
-
   return (
     <div className="card">
-      {(error && (
-        <img
-          src={background}
-          alt="project 1"
-          className={`card__img ${customClass} ${
-            description && 'card__img--hover'
-          }`}
-        />
-      )) || (
-        <img
-          src={image}
-          alt="project 1"
-          className={`card__img ${customClass} ${
-            description && 'card__img--hover'
-          }`}
-        />
-      )}
+      <Image
+        folder={folder}
+        fileName={fileName}
+        customClass={customClass}
+        hasHoverEffect={description}
+      />
       {link && (
         <p className="card__link">
           <img src={linkImg} alt="" className="card__link--img" />
