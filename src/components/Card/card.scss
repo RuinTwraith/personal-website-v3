@@ -1,0 +1,87 @@
+@import '../../styles/utility.scss';
+
+:root {
+  --card-radius: 1.2rem;
+  --link-bg-color: rgb(196, 11, 41);
+  --background: linear-gradient(
+    to bottom,
+    rgba(11, 19, 13, 0.2) 1%,
+    rgba(11, 19, 13, 0.8) 15%
+  );
+}
+
+.card {
+  border-radius: var(--card-radius);
+  background-color: var(--color-primary);
+  padding: 3.2rem;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 28rem;
+  box-shadow: inset 12px 12px 21px #c26b0b, inset -12px -12px 21px #ffaf13;
+
+  &__index {
+    font-size: 2rem;
+    color: var(--color-white);
+  }
+  &__type {
+    font-size: 1.2rem;
+    font-size: 300;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+
+  & .image {
+    // border-radius: var(--card-radius);
+    height: 18rem;
+    width: 100%;
+    transition: 0.5s ease-out;
+    object-fit: cover;
+  }
+
+  &__container {
+    border-radius: var(--card-radius);
+    padding: 0.8rem;
+    background-color: var(--color-black);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    box-shadow: 5px 5px 10px #c26b0b, -5px -5px 10px #ffaf13;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+
+    &:hover {
+      box-shadow: 13px 13px 26px #c26b0b, -13px -13px 26px #ffaf13;
+    }
+
+    &--img {
+      width: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    color: var(--color-black);
+  }
+  &__name {
+    transition: 0.3s ease-out;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__description {
+    font-size: 1.5rem;
+  }
+}

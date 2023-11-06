@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  width: 100%;
+  font-family: 'Rowdies', sans-serif;
+
+  &__container {
+    max-width: var(--max-width);
+    width: 75%;
+    margin: 2.5rem auto;
+    padding: 1rem 2rem;
+
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo-img {
+    display: block;
+    height: 5rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+.nav {
+  &__container {
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+  }
+  &__item {
+    font-size: 1.5rem;
+    // cursor: pointer;
+  }
+}

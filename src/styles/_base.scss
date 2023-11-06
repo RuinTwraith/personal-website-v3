@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+//SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-light-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 32, 32);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 71, 71);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  // background-color: var(--header-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
