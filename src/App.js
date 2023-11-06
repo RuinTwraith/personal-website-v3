@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <Section {...projects} />
       {/* Add download icon and view icon for images */}
-      <Section {...artWorks} />
+      {/* <Section {...artWorks} /> */}
       <Section {...photos} />
     </div>
   )

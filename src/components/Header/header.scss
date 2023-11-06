@@ -1,32 +1,25 @@
 .header {
-  background-color: var(--header-bg-color);
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 7rem;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  font-size: 2rem;
-  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.247);
-  z-index: 2;
+  font-family: 'Rowdies', sans-serif;
 
   &__container {
     max-width: var(--max-width);
-    margin: auto;
-    padding: 0 2rem;
+    width: 75%;
+    margin: 2.5rem auto;
+    padding: 1rem 2rem;
 
-    color: #dbdc9a;
+    color: var(--color-white);
+    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
   }
-  &__logo {
-    // text-transform: uppercase;
-    // transform: rotate(90deg);
-  }
   &__logo-img {
-    width: 5rem;
+    display: block;
     height: 5rem;
+    aspect-ratio: 1/1;
   }
 }
 
@@ -34,12 +27,10 @@
   &__container {
     list-style: none;
     display: flex;
-
-    :not(:last-child) {
-      margin-right: 3rem;
-    }
+    gap: 6rem;
   }
-
   &__item {
+    font-size: 1.5rem;
+    // cursor: pointer;
   }
 }

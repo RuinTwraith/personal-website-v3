@@ -6,10 +6,11 @@ const Hero = () => {
     <div className="herobox">
       <main className="herobox__container">
         <div className="herobox__left">
-          <span className="greet">Hello, I'm</span>
-          <span className="name">Dibbendu Koley.</span>
-          <span className="web-dev">Web Developer.</span>
+          <div className="web-dev">Web Developer</div>
+          <div className="first-name">Dibbendu</div>
+          <div className="last-name">Koley</div>
         </div>
+        <div className="herobox__right">image</div>
       </main>
     </div>
   )

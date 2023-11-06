@@ -12,17 +12,13 @@ const Image = (props) => {
         <img
           src={background}
           alt="project"
-          className={`card__img ${customClass} ${
-            hasHoverEffect && 'card__img--hover'
-          }`}
+          className={`image ${customClass} ${hasHoverEffect && 'image--hover'}`}
         />
       )) || (
         <img
           src={image}
           alt="project"
-          className={`card__img ${customClass} ${
-            hasHoverEffect && 'card__img--hover'
-          }`}
+          className={`image ${customClass} ${hasHoverEffect && 'image--hover'}`}
         />
       )}
     </>
