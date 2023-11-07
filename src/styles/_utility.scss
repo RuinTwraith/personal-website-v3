@@ -1,3 +1,5 @@
+@import './variables';
+
 .artworks {
   height: 26rem;
 }
@@ -7,7 +9,7 @@
 }
 
 .photos-background {
-  background: var(--photo-section-bg-color);
+  // background: $photo-section-bg-color;
 }
 
 .heading-font {

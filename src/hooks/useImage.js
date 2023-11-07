@@ -7,17 +7,14 @@ const useImage = ({ path }) => {
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        console.log('path', path)
-        const response = await import(`../assets/${path}.webp`)
-        console.log('response', response)
+        const imagePath = `../assets/${path}`
+        const response = await import(imagePath)
         setImage(response.default)
       } catch (err) {
         setError(err)
       }
     }
 
-    // console.log('error', error)
-    // console.log('image', image)
     fetchImage()
   }, [path])
   return {

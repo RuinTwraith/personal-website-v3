@@ -1,7 +1,9 @@
+@use 'sass:color';
+@import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
 .section {
-  background-color: var(--section-bg-color);
+  background-color: adjust-color(color.adjust($color-primary, $alpha: 1));
   text-align: center;
 
   &__container {

@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .section {
-  background-color: var(--section-bg-color);
+  background-color: $section-bg-color;
   text-align: center;
 
   &__container {

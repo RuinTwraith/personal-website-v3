@@ -1,3 +1,5 @@
+@import './variables';
+
 *,
 *::after,
 *::before {
@@ -13,7 +15,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--color-light-grey);
+  background: $color-light-grey;
 }
 
 /* Handle */
@@ -33,12 +35,6 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  background: linear-gradient(
-      180deg,
-      var(--body-background-color),
-      var(--color-white)
-    ),
-    var(--body-background-color);
 }
 
 a {

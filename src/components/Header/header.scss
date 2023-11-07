@@ -1,15 +1,17 @@
+@import '../../styles/variables.scss';
+
 .header {
   position: absolute;
   width: 100%;
   font-family: 'Rowdies', sans-serif;
 
   &__container {
-    max-width: var(--max-width);
+    max-width: $max-width;
     width: 75%;
     margin: 2.5rem auto;
     padding: 1rem 2rem;
 
-    color: var(--color-white);
+    color: $color-white;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;

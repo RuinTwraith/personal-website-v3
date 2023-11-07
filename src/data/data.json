@@ -9,7 +9,7 @@
         "description": "This is a Full stack web application, where users can search information of selected location and get reviews, images and brief description of that location.",
         "info": "React Project",
         "image": "https://picsum.photos/300/300",
-        "fileName": "p1"
+        "fileName": "p1.png"
       },
       {
         "name": "Rock Paper Scissors",
@@ -19,14 +19,14 @@
         ],
         "info": "React Project",
         "image": "https://picsum.photos/200/200",
-        "fileName": "p2"
+        "fileName": "p2.png"
       },
       {
         "name": "Mechanic Finder",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         "info": "React Project",
         "image": "https://picsum.photos/400/300",
-        "fileName": "p3"
+        "fileName": "p3.png"
       }
     ]
   },
@@ -39,27 +39,27 @@
       {
         "name": "Candles",
         "link": "2020",
-        "fileName": "candle"
+        "fileName": "candle.webp"
       },
       {
         "name": "Chair",
         "link": "2021",
-        "fileName": "chair"
+        "fileName": "chair.webp"
       },
       {
         "name": "Cherry Blossom",
         "link": "2022",
-        "fileName": "cherry"
+        "fileName": "cherry.webp"
       },
       {
         "name": "Donut",
         "link": "2020",
-        "fileName": "donut"
+        "fileName": "donut.webp"
       },
       {
         "name": "Neon Sign",
         "link": "2020",
-        "fileName": "neon"
+        "fileName": "neon.webp"
       }
     ]
   },
@@ -73,93 +73,93 @@
       {
         "name": "Mall Road, Shimla",
         "link": "2021",
-        "fileName": "shimla-mall-road-1"
+        "fileName": "shimla-mall-road-1.webp"
       },
       {
         "name": "Chirst Church, Shimla",
         "link": "2020",
-        "fileName": "christ-church"
+        "fileName": "christ-church.webp"
       },
       {
         "name": "Oberoi Hotel",
         "link": "2022",
-        "fileName": "oberoi"
+        "fileName": "oberoi.webp"
       },
       {
         "name": "Rabbits",
         "link": "2021",
-        "fileName": "rabbit"
+        "fileName": "rabbit.webp"
       },
       {
         "name": "Dainkund Peak",
         "link": "2021",
-        "fileName": "dainkund-peak"
+        "fileName": "dainkund-peak.webp"
       },
       {
         "name": "Bungee Jumping",
         "link": "2021",
-        "fileName": "bungee"
+        "fileName": "bungee.webp"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-3"
+        "fileName": "shimla-3.webp"
       },
       {
         "name": "Haji Ali Dargah",
         "link": "2020",
-        "fileName": "haji-ali"
+        "fileName": "haji-ali.webp"
       },
       {
         "name": "Seagull",
         "link": "2020",
-        "fileName": "seagull-2"
+        "fileName": "seagull-2.webp"
       },
       {
         "name": "Rani Jhansi Statue, Shimla",
         "link": "2020",
-        "fileName": "rani-jhansi"
+        "fileName": "rani-jhansi.webp"
       },
       {
         "name": "Bokeh",
         "link": "2021",
-        "fileName": "bokeh"
+        "fileName": "bokeh.webp"
       },
       {
         "name": "Chamera Dam",
         "description": "The Chamera Dam impounds the River Ravi and supports the hydroelectricity project in the region.",
         "link": "2022",
-        "fileName": "chamera-dam"
+        "fileName": "chamera-dam.webp"
       },
       {
         "name": "Ganga Aarti",
         "link": "2022",
-        "fileName": "ganga"
+        "fileName": "ganga.webp"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-1"
+        "fileName": "shimla-1.webp"
       },
       {
         "name": "Taj Hotel",
         "link": "2020",
-        "fileName": "taj-hotel"
+        "fileName": "taj-hotel.webp"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-2"
+        "fileName": "shimla-2.webp"
       },
       {
         "name": "Seagull",
         "link": "2022",
-        "fileName": "seagull-1"
+        "fileName": "seagull-1.webp"
       },
       {
         "name": "Mall Road, Shimla",
         "link": "2021",
-        "fileName": "shimla-mall-road-2"
+        "fileName": "shimla-mall-road-2.webp"
       }
     ]
   }

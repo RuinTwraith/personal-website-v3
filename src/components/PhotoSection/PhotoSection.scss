@@ -1,11 +1,6 @@
-:root {
-  --no-of-columns: 4;
-  --gap: 2rem;
-  --body-max-width: 1200px;
-  --default-body-max-height: 85vh;
-  --body-max-height: 85rem;
-  --body-overflow: hidden;
-}
+@import '../../styles/variables.scss';
+
+$max-height: 85rem;
 
 .photo {
   width: 100%;
@@ -13,19 +8,19 @@
   background-color: white;
 
   &__body {
-    max-width: var(--body-max-width);
+    max-width: $max-width;
     display: grid;
-    grid-template-columns: repeat(var(--no-of-columns), minmax(0, 1fr));
+    grid-template-columns: repeat(4), minmax(0, 1fr);
     align-items: start;
     margin: 2rem auto;
-    column-gap: var(--gap);
-    max-height: var(--body-max-height);
-    overflow: var(--body-overflow);
+    column-gap: 2rem;
+    max-height: $max-height;
+    overflow: hidden;
 
     &-col {
       display: grid;
       grid-template-columns: minmax(0, 1fr);
-      row-gap: var(--gap);
+      row-gap: 2rem;
     }
 
     &--img {
@@ -48,7 +43,7 @@
         right: 0.6rem;
         position: absolute;
         background: rgba(248, 250, 117, 0.733);
-        color: var(--color-black);
+        color: $color-black;
         width: fit-content;
         padding: 0.6rem 1rem;
         font-weight: 600;
@@ -59,11 +54,7 @@
   }
 
   &__footer {
-    background: linear-gradient(
-      to top,
-      var(--photo-section-bg-color),
-      transparent
-    );
+    // background: linear-gradient(to top, $photo-section-bg-color, transparent);
     margin: auto;
     padding: 6rem;
     position: absolute;

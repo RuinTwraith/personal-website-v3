@@ -1,4 +1,3 @@
-import React from 'react'
 import useImage from '../../hooks/useImage'
 import background from '../../assets/bg.jpg'
 
