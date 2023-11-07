@@ -3,8 +3,8 @@ import useImage from '../../hooks/useImage'
 import background from '../../assets/bg.jpg'
 
 const Image = (props) => {
-  const { folder, fileName, customClass, hasHoverEffect } = props
-  const { image, error } = useImage({ folder, fileName })
+  const { path, customClass, hasHoverEffect } = props
+  const { image, error } = useImage({ path })
 
   return (
     <>

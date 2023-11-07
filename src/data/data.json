@@ -1,0 +1,166 @@
+{
+  "projects": {
+    "title": "Projects",
+    "folder": "projects",
+    "description": "The source code is available in GitHub for every project. Some are live and deployed too!",
+    "data": [
+      {
+        "name": "Covid-19 Tracker",
+        "description": "This is a Full stack web application, where users can search information of selected location and get reviews, images and brief description of that location.",
+        "info": "React Project",
+        "image": "https://picsum.photos/300/300",
+        "fileName": "p1"
+      },
+      {
+        "name": "Rock Paper Scissors",
+        "description": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        ],
+        "info": "React Project",
+        "image": "https://picsum.photos/200/200",
+        "fileName": "p2"
+      },
+      {
+        "name": "Mechanic Finder",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "info": "React Project",
+        "image": "https://picsum.photos/400/300",
+        "fileName": "p3"
+      }
+    ]
+  },
+  "artWorks": {
+    "title": "Art Works",
+    "folder": "artworks",
+    "customClass": "artworks",
+    "description": "The following digital arts are created in Blender3D and Inkscape. I also have an art portfolio in Behance.",
+    "data": [
+      {
+        "name": "Candles",
+        "link": "2020",
+        "fileName": "candle"
+      },
+      {
+        "name": "Chair",
+        "link": "2021",
+        "fileName": "chair"
+      },
+      {
+        "name": "Cherry Blossom",
+        "link": "2022",
+        "fileName": "cherry"
+      },
+      {
+        "name": "Donut",
+        "link": "2020",
+        "fileName": "donut"
+      },
+      {
+        "name": "Neon Sign",
+        "link": "2020",
+        "fileName": "neon"
+      }
+    ]
+  },
+  "photos": {
+    "id": "photos",
+    "title": "My Photos",
+    "folder": "photos",
+    "customClass": "",
+    "description": "I clicked these photos using my DSLR Nikon D3300. I often upload to Unsplash and Instagram.",
+    "data": [
+      {
+        "name": "Mall Road, Shimla",
+        "link": "2021",
+        "fileName": "shimla-mall-road-1"
+      },
+      {
+        "name": "Chirst Church, Shimla",
+        "link": "2020",
+        "fileName": "christ-church"
+      },
+      {
+        "name": "Oberoi Hotel",
+        "link": "2022",
+        "fileName": "oberoi"
+      },
+      {
+        "name": "Rabbits",
+        "link": "2021",
+        "fileName": "rabbit"
+      },
+      {
+        "name": "Dainkund Peak",
+        "link": "2021",
+        "fileName": "dainkund-peak"
+      },
+      {
+        "name": "Bungee Jumping",
+        "link": "2021",
+        "fileName": "bungee"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-3"
+      },
+      {
+        "name": "Haji Ali Dargah",
+        "link": "2020",
+        "fileName": "haji-ali"
+      },
+      {
+        "name": "Seagull",
+        "link": "2020",
+        "fileName": "seagull-2"
+      },
+      {
+        "name": "Rani Jhansi Statue, Shimla",
+        "link": "2020",
+        "fileName": "rani-jhansi"
+      },
+      {
+        "name": "Bokeh",
+        "link": "2021",
+        "fileName": "bokeh"
+      },
+      {
+        "name": "Chamera Dam",
+        "description": "The Chamera Dam impounds the River Ravi and supports the hydroelectricity project in the region.",
+        "link": "2022",
+        "fileName": "chamera-dam"
+      },
+      {
+        "name": "Ganga Aarti",
+        "link": "2022",
+        "fileName": "ganga"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-1"
+      },
+      {
+        "name": "Taj Hotel",
+        "link": "2020",
+        "fileName": "taj-hotel"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-2"
+      },
+      {
+        "name": "Seagull",
+        "link": "2022",
+        "fileName": "seagull-1"
+      },
+      {
+        "name": "Mall Road, Shimla",
+        "link": "2021",
+        "fileName": "shimla-mall-road-2"
+      }
+    ]
+  }
+}

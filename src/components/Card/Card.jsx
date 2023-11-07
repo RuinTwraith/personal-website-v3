@@ -1,13 +1,13 @@
 import React from 'react'
 import './card.scss'
-import linkImg from '../../assets/icons/link.png'
+import linkImg from '../../assets/icons/link.svg'
 import Image from '../Image'
 import '../../styles/_utility.scss'
 
 const Card = ({
   name,
   description,
-  link,
+  info,
   folder,
   fileName,
   customClass,
@@ -21,17 +21,10 @@ const Card = ({
           {index && <p className="card__index">{index}</p>}
           <p className="card__type">{type}</p>
         </div>
-        {/* TODO: add project link */}
-        {link && (
-          <a href="#" target="_blank" className="card__link">
-            <img src={linkImg} alt="link" className="card__link--img" />
-          </a>
-        )}
       </div>
       <div className="card__container">
         <Image
-          folder={folder}
-          fileName={fileName}
+          path={`${folder}/${fileName}`}
           customClass={customClass}
           hasHoverEffect={description}
         />
@@ -39,8 +32,22 @@ const Card = ({
       <div className="card__footer">
         {name && (
           <div className={`card__text ${description && 'card__text--hover'}`}>
-            <p className="card__name heading-font">{name}</p>
-            <p className="card__description">{description}</p>
+            {/* TODO: add project link */}
+            <a href="#" target="_blank" className="card__name heading-font">
+              {name}
+              <img src={linkImg} alt="link" className="card__link-img" />
+            </a>
+            {Array.isArray(description) ? (
+              <ul className="card__description-container">
+                {description.map((text, index) => (
+                  <li key={index} className="card__description">
+                    {text}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="card__description">{description}</p>
+            )}
           </div>
         )}
       </div>

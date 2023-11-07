@@ -1,25 +1,28 @@
 import { useEffect, useState } from 'react'
 
-const useImage = ({ folder, fileName }) => {
+const useImage = ({ path }) => {
   const [error, setError] = useState(null)
   const [image, setImage] = useState(null)
 
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await import(`../assets/${folder}/${fileName}`)
+        console.log('path', path)
+        const response = await import(`../assets/${path}.webp`)
+        console.log('response', response)
         setImage(response.default)
       } catch (err) {
         setError(err)
       }
     }
 
+    // console.log('error', error)
+    // console.log('image', image)
     fetchImage()
-  }, [folder, fileName])
-
+  }, [path])
   return {
     error,
-    image,
+    image
   }
 }
 

@@ -10,7 +10,6 @@ const Hero = () => {
           <div className="first-name">Dibbendu</div>
           <div className="last-name">Koley</div>
         </div>
-        <div className="herobox__right">image</div>
       </main>
     </div>
   )

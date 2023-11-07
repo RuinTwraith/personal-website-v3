@@ -1,7 +1,7 @@
 import React from 'react'
 import './section.scss'
 import Card from '../Card'
-import PhotoSection from '../PhotoSection/PhotoSection'
+import PhotoSection from '../PhotoSection'
 
 const Section = ({
   id,
