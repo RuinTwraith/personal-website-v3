@@ -18,7 +18,6 @@ const Image = (props) => {
       src={src}
       alt={alt}
       effect="blur"
-      placeholder={<span className="image">LOADING</span>}
       className={`image ${customClass} ${hasHoverEffect ? 'image--hover' : ''}`}
     />
   )

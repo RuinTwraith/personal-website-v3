@@ -35,9 +35,7 @@ const About = () => {
               possibilities of the web together!
             </p>
           </div>
-          <div className="image-container">
-            <Image file="me" path={`photos/me.webp`} />
-          </div>
+          <Image file="me" path={`photos/me.webp`} />
         </div>
         <Section {...photos} />
       </div>

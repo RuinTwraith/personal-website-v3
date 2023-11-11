@@ -31,12 +31,16 @@
     align-items: center;
     gap: 4rem;
 
-    &.image-container {
+    & .image {
       width: 25rem;
       height: 25rem;
       border-radius: 10px;
+
+      @include respond(tab-port) {
+        border-radius: 25px;
+      }
     }
-    & .image {
+    & .lazy-load-image-background {
       width: 25rem;
       height: 25rem;
       border-radius: 10px;
