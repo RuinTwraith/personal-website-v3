@@ -3,16 +3,16 @@ import './PhotoSection.scss'
 import Image from '../Image'
 // import downArrow from '../../assets/icons/down-arrow.png'
 
-const noOfColumns = 3
+// const noOfColumns = 3
 
 const PhotoSection = ({ data, folder }) => {
   // const [isShowMore, setIsShowMore] = useState(false)
-  const splitPhotos = []
-  const itemsPerColumn = Math.floor(data.length / noOfColumns)
-  for (let i = 0; i < noOfColumns; i++) {
-    const photos = data.slice(i * itemsPerColumn, (i + 1) * itemsPerColumn)
-    splitPhotos.push(photos)
-  }
+  // const splitPhotos = []
+  // const itemsPerColumn = Math.floor(data.length / noOfColumns)
+  // for (let i = 0; i < noOfColumns; i++) {
+  //   const photos = data.slice(i * itemsPerColumn, (i + 1) * itemsPerColumn)
+  //   splitPhotos.push(photos)
+  // }
 
   // useEffect(() => {
   //   document.documentElement.style.setProperty('--no-of-columns', noOfColumns)
@@ -57,7 +57,7 @@ const PhotoSection = ({ data, folder }) => {
         .
       </h4>
       <div className="photo__body">
-        {splitPhotos.map((photos, index) => (
+        {data.map((photos, index) => (
           <div className="photo__body-col" key={index}>
             {photos.map((item, i) => (
               <div className="photo__body--img" key={i}>

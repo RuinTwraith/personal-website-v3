@@ -1,6 +1,6 @@
 {
   "projects": {
-    "title": "Projects",
+    "title": "PROJECTS",
     "folder": "projects",
     "description": "Here are a selection of solo projects I've worked on over the past few years, each with its source code available on GitHub. Some of them are live and deployed!",
     "data": [
@@ -20,7 +20,7 @@
         "fileName": "portfolio.webp",
         "file": "portfolio",
         "github": "https://github.com/RuinTwraith/personal-website-v2",
-        "link": "https://dibbendukoley.web.app/"
+        "link": "https://dibbendu-koley-v2.web.app/"
       },
       {
         "name": "Sterling Hotels",
@@ -86,120 +86,53 @@
   },
   "photos": {
     "id": "photos",
-    "title": "My Photos",
+    "title": "What I do as Hobby?",
     "folder": "photos",
     "customClass": "",
     "description": "Beyond my role as a developer, I'm a passionate traveler, and my camera is an ever-present companion on my journeys. With my reliable DSLR, the Nikon D3300, and the versatile Fujifilm X-S20, I've seized countless breathtaking moments during my adventures.",
     "data": [
-      {
-        "name": "Mall Road, Shimla",
-        "link": "2021",
-        "fileName": "shimla-mall-road-1.webp",
-        "file": "shimlaMallRoad1"
-      },
-      {
-        "name": "Chirst Church, Shimla",
-        "link": "2020",
-        "fileName": "christ-church.webp",
-        "file": "christChurch"
-      },
-      {
-        "name": "Oberoi Hotel",
-        "link": "2022",
-        "fileName": "oberoi.webp",
-        "file": "oberoi"
-      },
-      {
-        "name": "Rabbits",
-        "link": "2021",
-        "fileName": "rabbit.webp",
-        "file": "rabbit"
-      },
-      {
-        "name": "Dainkund Peak",
-        "link": "2021",
-        "fileName": "dainkund-peak.webp",
-        "file": "dainkundPeak"
-      },
-      {
-        "name": "Bungee Jumping",
-        "link": "2021",
-        "fileName": "bungee.webp",
-        "file": "bungee"
-      },
-      {
-        "name": "Shimla",
-        "link": "2021",
-        "fileName": "shimla-3.webp",
-        "file": "shimla3"
-      },
-      {
-        "name": "Haji Ali Dargah",
-        "link": "2020",
-        "fileName": "haji-ali.webp",
-        "file": "hajiAli"
-      },
-      {
-        "name": "Seagull",
-        "link": "2020",
-        "fileName": "seagull-2.webp",
-        "file": "seagull2"
-      },
-      {
-        "name": "Rani Jhansi Statue, Shimla",
-        "link": "2020",
-        "fileName": "rani-jhansi.webp",
-        "file": "raniJhansi"
-      },
-      {
-        "name": "Bokeh",
-        "link": "2021",
-        "fileName": "bokeh.webp",
-        "file": "bokeh"
-      },
-      {
-        "name": "Chamera Dam",
-        "description": "The Chamera Dam impounds the River Ravi and supports the hydroelectricity project in the region.",
-        "link": "2022",
-        "fileName": "chamera-dam.webp",
-        "file": "chameraDam"
-      },
-      {
-        "name": "Ganga Aarti",
-        "link": "2022",
-        "fileName": "ganga.webp",
-        "file": "ganga"
-      },
-      {
-        "name": "Shimla",
-        "link": "2021",
-        "fileName": "shimla-1.webp",
-        "file": "shimla1"
-      },
-      {
-        "name": "Taj Hotel",
-        "link": "2020",
-        "fileName": "taj-hotel.webp",
-        "file": "tajHotel"
-      },
-      {
-        "name": "Shimla",
-        "link": "2021",
-        "fileName": "shimla-2.webp",
-        "file": "shimla2"
-      },
-      {
-        "name": "Seagull",
-        "link": "2022",
-        "fileName": "seagull-1.webp",
-        "file": "seagull1"
-      },
-      {
-        "name": "Mall Road, Shimla",
-        "link": "2021",
-        "fileName": "shimla-mall-road-2.webp",
-        "file": "shimlaMallRoad2"
-      }
+      [
+        {
+          "name": "Mall Road, Shimla",
+          "link": "2021",
+          "fileName": "shimla-mall-road-1.webp",
+          "file": "shimlaMallRoad1"
+        },
+        {
+          "name": "Chirst Church, Shimla",
+          "link": "2020",
+          "fileName": "christ-church.webp",
+          "file": "christChurch"
+        }
+      ],
+      [
+        {
+          "name": "Shimla",
+          "link": "2021",
+          "fileName": "shimla-3.webp",
+          "file": "shimla3"
+        },
+        {
+          "name": "Taj Hotel",
+          "link": "2020",
+          "fileName": "taj-hotel.webp",
+          "file": "tajHotel"
+        }
+      ],
+      [
+        {
+          "name": "Seagull",
+          "link": "2022",
+          "fileName": "seagull-1.webp",
+          "file": "seagull1"
+        },
+        {
+          "name": "Shimla",
+          "link": "2021",
+          "fileName": "shimla-1.webp",
+          "file": "shimla1"
+        }
+      ]
     ]
   }
 }

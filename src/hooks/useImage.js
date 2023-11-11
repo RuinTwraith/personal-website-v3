@@ -12,24 +12,12 @@ import link from '../assets/icons/link.svg'
 import logo from '../assets/logo/logo.png'
 
 /* photos */
-import bokeh from '../assets/photos/bokeh.webp'
-import bungee from '../assets/photos/bungee.webp'
-import chameraDam from '../assets/photos/chamera-dam.webp'
 import christChurch from '../assets/photos/christ-church.webp'
-import dainkundPeak from '../assets/photos/dainkund-peak.webp'
-import ganga from '../assets/photos/ganga.webp'
-import hajiAli from '../assets/photos/haji-ali.webp'
 import me from '../assets/photos/me.webp'
-import oberoi from '../assets/photos/oberoi.webp'
-import rabbit from '../assets/photos/rabbit.webp'
-import raniJhansi from '../assets/photos/rani-jhansi.webp'
 import seagull1 from '../assets/photos/seagull-1.webp'
-import seagull2 from '../assets/photos/seagull-2.webp'
 import shimla1 from '../assets/photos/shimla-1.webp'
-import shimla2 from '../assets/photos/shimla-2.webp'
 import shimla3 from '../assets/photos/shimla-3.webp'
 import shimlaMallRoad1 from '../assets/photos/shimla-mall-road-1.webp'
-import shimlaMallRoad2 from '../assets/photos/shimla-mall-road-2.webp'
 import tajHotel from '../assets/photos/taj-hotel.webp'
 
 /* projects */
@@ -46,24 +34,12 @@ const useImage = ({ file }) => {
     github,
     link,
     logo,
-    bokeh,
-    bungee,
-    chameraDam,
     christChurch,
-    dainkundPeak,
-    ganga,
-    hajiAli,
     me,
-    oberoi,
-    rabbit,
-    raniJhansi,
     seagull1,
-    seagull2,
     shimla1,
-    shimla2,
     shimla3,
     shimlaMallRoad1,
-    shimlaMallRoad2,
     tajHotel,
     covid19,
     eiPhotography,

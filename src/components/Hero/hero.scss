@@ -2,7 +2,44 @@
 @import '../../styles/mixins.scss';
 
 .herobox {
-  background-image: url('../../assets/background/night-city.jpg');
+  /* background-image: repeating-radial-gradient(
+      closest-corner at 1% 21%,
+      rgba(255, 0, 255, 0.151),
+      rgba(0, 255, 255, 0.068),
+      #746f6f10 1.7%
+    ),
+    linear-gradient(
+      303deg,
+      hsl(266deg 85.51% 8.14% / 88%) 4%,
+      hsl(249.75deg 62.13% 17.57% / 64%) 10%,
+      hsla(17, 70%, 48%, 0.3) 22%,
+      hsla(67, 78%, 40%, 0.34) 28%,
+      hsl(326deg 53.47% 52.94% / 37%) 35%,
+      hsla(233, 84%, 34%, 0.01) 56%,
+      hsla(238, 78%, 18%, 0.6) 100%
+    ),
+    linear-gradient(
+      196deg,
+      hsla(266, 88%, 13%, 0.5) 10%,
+      hsla(331, 100%, 25%, 0.8) 50%,
+      hsl(18deg 66% 49% / 81%) 68%,
+      hsla(52, 100%, 56%, 0.8) 80%,
+      hsla(266, 88%, 13%, 0.5) 100%
+    ),
+    repeating-radial-gradient(
+      closest-corner at 51% 51%,
+      #ffffff1c,
+      #ffffff17,
+      rgba(207, 178, 212, 0.151) 10%
+    ),
+    linear-gradient(
+      346deg,
+      hsl(266, 88%, 13%) 0%,
+      hsl(257, 77%, 23%) 44%,
+      hsl(247, 71%, 35%) 65%,
+      hsl(230, 62%, 14%) 100%
+    ); */
+  // background-color: red;
   height: 80rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,17 +63,18 @@
       font-weight: 400;
       letter-spacing: 0.1rem;
       width: fit-content;
-      padding: 0.5rem 1.4rem;
-      border-radius: 1rem;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.8rem;
       margin-left: auto;
       margin-bottom: 4rem;
       background: linear-gradient(
         120deg,
         transparent 25%,
-        rgba($color-secondary, 0.4) 50%,
+        rgba($color-secondary, 0.3) 50%,
         rgba($color-secondary, 0.1) 90%,
         transparent
       );
+      background-repeat: repeat-x;
       animation: iamspeed 2s infinite cubic-bezier(0.73, -0.46, 0.92, 0.75);
     }
     $font-size: min(15rem, 13vw);

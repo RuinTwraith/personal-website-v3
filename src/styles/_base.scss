@@ -35,6 +35,100 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  // background-image: repeating-radial-gradient(
+  //     closest-corner at 1% 21%,
+  //     rgba(255, 0, 255, 0.151),
+  //     rgba(0, 255, 255, 0.068),
+  //     #746f6f10 1.7%
+  //   ),
+  //   linear-gradient(
+  //     303deg,
+  //     hsl(266deg 85.51% 8.14% / 88%) 4%,
+  //     hsl(249.75deg 62.13% 17.57% / 64%) 10%,
+  //     hsla(17, 70%, 48%, 0.3) 22%,
+  //     hsla(67, 78%, 40%, 0.34) 28%,
+  //     hsl(326deg 53.47% 52.94% / 37%) 35%,
+  //     hsla(233, 84%, 34%, 0.01) 56%,
+  //     hsla(238, 78%, 18%, 0.6) 100%
+  //   ),
+  //   linear-gradient(
+  //     196deg,
+  //     hsla(266, 88%, 13%, 0.5) 10%,
+  //     hsla(331, 100%, 25%, 0.8) 50%,
+  //     hsl(18deg 66% 49% / 81%) 68%,
+  //     hsla(52, 100%, 56%, 0.8) 80%,
+  //     hsla(266, 88%, 13%, 0.5) 100%
+  //   ),
+  //   repeating-radial-gradient(
+  //     closest-corner at 51% 51%,
+  //     #ffffff1c,
+  //     #ffffff17,
+  //     rgba(207, 178, 212, 0.151) 10%
+  //   ),
+  //   linear-gradient(
+  //     346deg,
+  //     hsl(266, 88%, 13%) 0%,
+  //     hsl(257, 77%, 23%) 44%,
+  //     hsl(247, 71%, 35%) 65%,
+  //     hsl(230, 62%, 14%) 100%
+  //   );
+
+  background-image: repeating-radial-gradient(
+      closest-corner at 51% 51%,
+      rgb(0 133 105 / 13%),
+      rgb(0 14 24 / 5%),
+      rgb(0 87 77 / 20%) 10%
+    ),
+    linear-gradient(
+      115deg,
+      hsl(265, 100%, 4%) 0%,
+      hsl(268, 100%, 5%) 13%,
+      hsl(267, 100%, 7%) 25%,
+      hsl(263, 100%, 8%) 37%,
+      hsl(257, 100%, 10%) 50%,
+      hsl(260, 100%, 8%) 63%,
+      hsl(261, 99%, 6%) 75%,
+      hsl(256, 99%, 5%) 87%,
+      hsl(251, 100%, 2%) 100%
+    );
+
+  animation: gradient 80s ease infinite;
+  background-size: 500% 500%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
 }
 
 a {

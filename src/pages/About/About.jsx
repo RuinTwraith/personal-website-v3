@@ -6,12 +6,6 @@ import Image from '../../components/Image'
 const About = () => {
   return (
     <div className="about full-width">
-      <Image
-        file="darkPaint"
-        path="background/dark-paint.jpg"
-        alt="background"
-        customClass="about__background"
-      />
       <div className="about__container">
         <div className="profile__container">
           <div className="profile__text">
@@ -41,7 +35,9 @@ const About = () => {
               possibilities of the web together!
             </p>
           </div>
-          <Image file="me" path={`photos/me.webp`} />
+          <div className="image-container">
+            <Image file="me" path={`photos/me.webp`} />
+          </div>
         </div>
         <Section {...photos} />
       </div>

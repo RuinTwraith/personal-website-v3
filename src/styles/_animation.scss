@@ -1,11 +1,11 @@
 @import './variables';
 
 @keyframes iamspeed {
-  from {
-    background-position-x: 0;
+  0% {
+    background-position-x: 5rem;
   }
-  to {
-    background-position-x: 18rem;
+  100% {
+    background-position-x: 25rem;
   }
 }
 

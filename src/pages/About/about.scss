@@ -2,9 +2,9 @@
 
 .about {
   // background: url('../../assets/background/dark-paint.jpg');
+  // background: linear-gradient(60deg, #030412 40%, #2a0b69 80%, #4a3388);
   background-repeat: no-repeat;
   background-size: contain;
-  background: linear-gradient(60deg, #030412 40%, #2a0b69 80%, #4a3388);
 
   &__background {
     width: 100%;
@@ -24,21 +24,25 @@
 
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    background-color: rgba(36, 9, 100, 0.5);
+    background-color: rgba(44, 52, 92, 0.336);
 
-    box-shadow: 4px 4px rgba(36, 9, 100, 0.75);
+    box-shadow: 4px 4px rgba(38, 52, 92, 0.75);
     display: flex;
     align-items: center;
     gap: 4rem;
 
+    &.image-container {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 10px;
+    }
     & .image {
       width: 25rem;
-      aspect-ratio: 1/1;
+      height: 25rem;
       border-radius: 10px;
       box-shadow: 4px 4px rgba($color-primary-light, 0.5);
 
       @include respond(tab-port) {
-        // background-color: red;
         position: absolute;
         top: -23rem;
         left: 50%;
@@ -48,8 +52,6 @@
     }
 
     @include respond(tab-port) {
-      // background-color: red;
-      // flex-direction: column-reverse;
       margin-top: 23rem;
       border-radius: 25px;
     }
