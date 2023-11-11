@@ -2,7 +2,7 @@ import './hero.scss'
 
 const Hero = () => {
   return (
-    <div className="herobox">
+    <div className="herobox full-width">
       <main className="herobox__container">
         <div className="herobox__left">
           <div className="web-dev">Web Developer</div>

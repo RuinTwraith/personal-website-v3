@@ -1,20 +1,21 @@
-import "./App.scss";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Section from "./components/Section";
-import { projects, photos } from "./data/data.json";
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import ErrorPage from './pages/ErrorPage'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Section {...projects} />
-      {/* Add download icon and view icon for images */}
-      {/* <Section {...artWorks} /> */}
-      <Section {...photos} />
+    <div className="content-grid">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

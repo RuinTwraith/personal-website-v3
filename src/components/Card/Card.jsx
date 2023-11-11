@@ -1,6 +1,4 @@
-import React from 'react'
 import './card.scss'
-import linkImg from '../../assets/icons/link.svg'
 import Image from '../Image'
 import '../../styles/_utility.scss'
 
@@ -12,20 +10,30 @@ const Card = ({
   fileName,
   customClass,
   index,
-  type
+  github,
+  link
 }) => {
   return (
     <div className="card">
       <div className="card__header">
         <div className="card__title heading-font">
-          {index && <p className="card__index">{index}</p>}
-          <p className="card__type">{type}</p>
+          {index && <p className="card__index">{index}.</p>}
+          <p className="card__type">{info}</p>
         </div>
+        {github && (
+          <a href={github} target="_blank" rel="noreferrer" title="github link">
+            <Image
+              path="icons/github.svg"
+              customClass="card__github-img"
+              alt="github"
+            />
+          </a>
+        )}
       </div>
       <div className="card__container">
         <Image
           path={`${folder}/${fileName}`}
-          customClass={customClass}
+          customClass={`${customClass} card__image`}
           hasHoverEffect={description}
         />
       </div>
@@ -33,9 +41,20 @@ const Card = ({
         {name && (
           <div className={`card__text ${description && 'card__text--hover'}`}>
             {/* TODO: add project link */}
-            <a href="#" target="_blank" className="card__name heading-font">
-              {name}
-              <img src={linkImg} alt="link" className="card__link-img" />
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="card__name-container heading-font"
+            >
+              <p className="card__name" title={name}>
+                {name}
+              </p>
+              <Image
+                path="icons/link.svg"
+                customClass="card__link-img"
+                alt="link"
+              />
             </a>
             {Array.isArray(description) ? (
               <ul className="card__description-container">

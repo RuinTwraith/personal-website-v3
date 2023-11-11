@@ -1,11 +1,12 @@
+@use 'sass:color';
 @import '../../styles/variables.scss';
-@import '../../styles/utility.scss';
+@import '../../styles/mixins.scss';
 
 $card-radius: 1.2rem;
 
 .card {
   border-radius: $card-radius;
-  background-color: $color-primary;
+  background-color: $color-primary-light;
   padding: 3.2rem;
   position: relative;
   text-align: left;
@@ -13,25 +14,56 @@ $card-radius: 1.2rem;
   flex-direction: column;
   gap: 2rem;
   width: 28rem;
-  box-shadow: inset 12px 12px 21px #c26b0b, inset -12px -12px 21px #ffaf13;
+
+  background: linear-gradient(
+    145deg,
+    color.adjust($color-primary-light, $whiteness: 10%),
+    $color-primary-light
+  );
+  box-shadow: 6px 6px color.adjust($color-primary, $lightness: 18%);
+  transition: 100ms linear;
+
+  &:hover {
+    box-shadow: 8px 8px color.adjust($color-primary, $lightness: 12%);
+    transform: translate(-2px, -2px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
     display: flex;
     align-items: baseline;
     gap: 1rem;
-    color: $color-secondary;
+    color: $color-secondary-dark;
   }
+
   &__index {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
+
   &__type {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-size: 300;
     text-transform: uppercase;
   }
 
-  & .image {
-    height: 18rem;
+  &__github-img {
+    width: 2.5rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+    outline: 0.2rem solid transparent;
+
+    &:hover {
+      transform: rotateZ(30deg);
+    }
+  }
+
+  &__image {
+    height: auto;
     width: 100%;
     transition: 0.5s ease-out;
     object-fit: cover;
@@ -43,22 +75,27 @@ $card-radius: 1.2rem;
     background-color: $color-black;
   }
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__text {
     font-weight: 400;
     color: $color-black;
   }
-  &__name {
+  &__name-container {
     transition: 0.3s ease-out;
     font-size: 2rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+  }
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: linear-gradient(
+      to bottom,
+      transparent 80%,
+      rgba(color.adjust($accent-color, $whiteness: 20%), 0.5) 0%
+    );
   }
   &__link-img {
     width: 1.6rem;

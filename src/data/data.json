@@ -2,31 +2,47 @@
   "projects": {
     "title": "Projects",
     "folder": "projects",
-    "description": "The source code is available in GitHub for every project. Some are live and deployed too!",
+    "description": "Here are a selection of solo projects I've worked on over the past few years, each with its source code available on GitHub. Some of them are live and deployed!",
     "data": [
       {
+        "name": "Geo Visualizer",
+        "description": "This project was designed in Adobe XD and developed using React, Strapi and MonogDB. It helps users to look for locations more efficiently and elegantly.",
+        "info": "React, Strapi & MongoDB",
+        "fileName": "geo-visualizer.webp",
+        "github": "https://github.com/RuinTwraith/geo-visualizer",
+        "link": "https://github.com/RuinTwraith/geo-visualizer"
+      },
+      {
+        "name": "Old Portfolio",
+        "description": "This is an old version of my portfolio, made solely using HTML, SASS and Vanilla JavaScript.",
+        "info": "Javascript & SASS",
+        "fileName": "portfolio.webp",
+        "github": "https://github.com/RuinTwraith/personal-website-v2",
+        "link": "https://dibbendukoley.web.app/"
+      },
+      {
+        "name": "Sterling Hotels",
+        "description": "This is a mock website for Sterling Hotels. The UI is developed using pure HTML and SASS. It has various hover effects throughout the website.",
+        "info": "HTML & SASS",
+        "fileName": "sterling-hotels.webp",
+        "github": "https://github.com/RuinTwraith/sterling-hotels",
+        "link": "https://ruin-sterling-hotels.netlify.app/"
+      },
+      {
+        "name": "Explore Inside Photography",
+        "description": "This is a small portfolio website for a photographer. It has working contact form using realtime database of google firebase.",
+        "info": "Javascript & SASS",
+        "fileName": "ei-photography.webp",
+        "github": "https://github.com/RuinTwraith/explore-inside",
+        "link": "https://exploreinsidephotography.web.app/"
+      },
+      {
         "name": "Covid-19 Tracker",
-        "description": "This is a Full stack web application, where users can search information of selected location and get reviews, images and brief description of that location.",
+        "description": "This website was created to track the last pandemic event Covid-19. It is developed in React and open source API is used to get the data.",
         "info": "React Project",
-        "image": "https://picsum.photos/300/300",
-        "fileName": "p1.png"
-      },
-      {
-        "name": "Rock Paper Scissors",
-        "description": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-        ],
-        "info": "React Project",
-        "image": "https://picsum.photos/200/200",
-        "fileName": "p2.png"
-      },
-      {
-        "name": "Mechanic Finder",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        "info": "React Project",
-        "image": "https://picsum.photos/400/300",
-        "fileName": "p3.png"
+        "fileName": "covid-19.webp",
+        "github": "https://github.com/RuinTwraith/covid19-tracker",
+        "link": "https://covid-19-ruin.web.app/"
       }
     ]
   },
@@ -68,7 +84,7 @@
     "title": "My Photos",
     "folder": "photos",
     "customClass": "",
-    "description": "I clicked these photos using my DSLR Nikon D3300. I often upload to Unsplash and Instagram.",
+    "description": "Beyond my role as a developer, I'm a passionate traveler, and my camera is an ever-present companion on my journeys. With my reliable DSLR, the Nikon D3300, and the versatile Fujifilm X-S20, I've seized countless breathtaking moments during my adventures.",
     "data": [
       {
         "name": "Mall Road, Shimla",

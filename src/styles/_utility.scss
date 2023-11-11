@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import './variables';
 
 .artworks {
@@ -14,4 +15,62 @@
 
 .heading-font {
   font-family: 'Rowdies', sans-serif;
+}
+
+.link {
+  color: color.adjust($color-secondary, $blackness: 30%);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.link-light {
+  color: color.adjust($color-secondary, $lightness: 10%);
+}
+
+/*
+|  |  |<--content-->|  |  |
+|  |<-----breakout---->|  |
+|<-------fullWidth------->|
+*/
+.content-grid,
+.full-width {
+  $padding: 3rem;
+  $content-max-width: 1200px;
+  $breakout-width: 100px;
+
+  $content-spacing: min(
+    100% - ($padding * 2) /* smaller screen */,
+    $content-max-width /* large screen */
+  );
+  /* breakout is content + extra spacing,
+  in smaller screen it will look like content therefore 0,
+  in large screen it will take the extra space */
+  $breakout-spacing: minmax(0, $breakout-width);
+
+  /* fullWidth spacing */
+  $full-width-spacing: minmax($padding, 1fr);
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start]
+    $full-width-spacing
+    [breakout-start]
+    $breakout-spacing
+    [content-start]
+    $content-spacing
+    [content-end]
+    $breakout-spacing
+    [breakout-end]
+    $full-width-spacing
+    [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
 }
