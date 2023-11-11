@@ -8,6 +8,7 @@ const Card = ({
   info,
   folder,
   fileName,
+  file,
   customClass,
   index,
   github,
@@ -23,6 +24,7 @@ const Card = ({
         {github && (
           <a href={github} target="_blank" rel="noreferrer" title="github link">
             <Image
+              file="github"
               path="icons/github.svg"
               customClass="card__github-img"
               alt="github"
@@ -32,6 +34,7 @@ const Card = ({
       </div>
       <div className="card__container">
         <Image
+          file={file}
           path={`${folder}/${fileName}`}
           customClass={`${customClass} card__image`}
           hasHoverEffect={description}
@@ -51,6 +54,7 @@ const Card = ({
                 {name}
               </p>
               <Image
+                file="link"
                 path="icons/link.svg"
                 customClass="card__link-img"
                 alt="link"

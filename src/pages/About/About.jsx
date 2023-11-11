@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div className="about full-width">
       <Image
+        file="darkPaint"
         path="background/dark-paint.jpg"
         alt="background"
         customClass="about__background"
@@ -40,7 +41,7 @@ const About = () => {
               possibilities of the web together!
             </p>
           </div>
-          <Image path={`photos/me.webp`} />
+          <Image file="me" path={`photos/me.webp`} />
         </div>
         <Section {...photos} />
       </div>

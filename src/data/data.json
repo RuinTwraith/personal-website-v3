@@ -9,6 +9,7 @@
         "description": "This project was designed in Adobe XD and developed using React, Strapi and MonogDB. It helps users to look for locations more efficiently and elegantly.",
         "info": "React, Strapi & MongoDB",
         "fileName": "geo-visualizer.webp",
+        "file": "geoVisualizer",
         "github": "https://github.com/RuinTwraith/geo-visualizer",
         "link": "https://github.com/RuinTwraith/geo-visualizer"
       },
@@ -17,6 +18,7 @@
         "description": "This is an old version of my portfolio, made solely using HTML, SASS and Vanilla JavaScript.",
         "info": "Javascript & SASS",
         "fileName": "portfolio.webp",
+        "file": "portfolio",
         "github": "https://github.com/RuinTwraith/personal-website-v2",
         "link": "https://dibbendukoley.web.app/"
       },
@@ -25,6 +27,7 @@
         "description": "This is a mock website for Sterling Hotels. The UI is developed using pure HTML and SASS. It has various hover effects throughout the website.",
         "info": "HTML & SASS",
         "fileName": "sterling-hotels.webp",
+        "file": "sterlingHotels",
         "github": "https://github.com/RuinTwraith/sterling-hotels",
         "link": "https://ruin-sterling-hotels.netlify.app/"
       },
@@ -33,6 +36,7 @@
         "description": "This is a small portfolio website for a photographer. It has working contact form using realtime database of google firebase.",
         "info": "Javascript & SASS",
         "fileName": "ei-photography.webp",
+        "file": "eiPhotography",
         "github": "https://github.com/RuinTwraith/explore-inside",
         "link": "https://exploreinsidephotography.web.app/"
       },
@@ -41,6 +45,7 @@
         "description": "This website was created to track the last pandemic event Covid-19. It is developed in React and open source API is used to get the data.",
         "info": "React Project",
         "fileName": "covid-19.webp",
+        "file": "covid19",
         "github": "https://github.com/RuinTwraith/covid19-tracker",
         "link": "https://covid-19-ruin.web.app/"
       }
@@ -89,93 +94,111 @@
       {
         "name": "Mall Road, Shimla",
         "link": "2021",
-        "fileName": "shimla-mall-road-1.webp"
+        "fileName": "shimla-mall-road-1.webp",
+        "file": "shimlaMallRoad1"
       },
       {
         "name": "Chirst Church, Shimla",
         "link": "2020",
-        "fileName": "christ-church.webp"
+        "fileName": "christ-church.webp",
+        "file": "christChurch"
       },
       {
         "name": "Oberoi Hotel",
         "link": "2022",
-        "fileName": "oberoi.webp"
+        "fileName": "oberoi.webp",
+        "file": "oberoi"
       },
       {
         "name": "Rabbits",
         "link": "2021",
-        "fileName": "rabbit.webp"
+        "fileName": "rabbit.webp",
+        "file": "rabbit"
       },
       {
         "name": "Dainkund Peak",
         "link": "2021",
-        "fileName": "dainkund-peak.webp"
+        "fileName": "dainkund-peak.webp",
+        "file": "dainkundPeak"
       },
       {
         "name": "Bungee Jumping",
         "link": "2021",
-        "fileName": "bungee.webp"
+        "fileName": "bungee.webp",
+        "file": "bungee"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-3.webp"
+        "fileName": "shimla-3.webp",
+        "file": "shimla3"
       },
       {
         "name": "Haji Ali Dargah",
         "link": "2020",
-        "fileName": "haji-ali.webp"
+        "fileName": "haji-ali.webp",
+        "file": "hajiAli"
       },
       {
         "name": "Seagull",
         "link": "2020",
-        "fileName": "seagull-2.webp"
+        "fileName": "seagull-2.webp",
+        "file": "seagull2"
       },
       {
         "name": "Rani Jhansi Statue, Shimla",
         "link": "2020",
-        "fileName": "rani-jhansi.webp"
+        "fileName": "rani-jhansi.webp",
+        "file": "raniJhansi"
       },
       {
         "name": "Bokeh",
         "link": "2021",
-        "fileName": "bokeh.webp"
+        "fileName": "bokeh.webp",
+        "file": "bokeh"
       },
       {
         "name": "Chamera Dam",
         "description": "The Chamera Dam impounds the River Ravi and supports the hydroelectricity project in the region.",
         "link": "2022",
-        "fileName": "chamera-dam.webp"
+        "fileName": "chamera-dam.webp",
+        "file": "chameraDam"
       },
       {
         "name": "Ganga Aarti",
         "link": "2022",
-        "fileName": "ganga.webp"
+        "fileName": "ganga.webp",
+        "file": "ganga"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-1.webp"
+        "fileName": "shimla-1.webp",
+        "file": "shimla1"
       },
       {
         "name": "Taj Hotel",
         "link": "2020",
-        "fileName": "taj-hotel.webp"
+        "fileName": "taj-hotel.webp",
+        "file": "tajHotel"
       },
       {
         "name": "Shimla",
         "link": "2021",
-        "fileName": "shimla-2.webp"
+        "fileName": "shimla-2.webp",
+        "file": "shimla2"
       },
       {
         "name": "Seagull",
         "link": "2022",
-        "fileName": "seagull-1.webp"
+        "fileName": "seagull-1.webp",
+        "file": "seagull1"
       },
       {
         "name": "Mall Road, Shimla",
         "link": "2021",
-        "fileName": "shimla-mall-road-2.webp"
+        "fileName": "shimla-mall-road-2.webp",
+        "file": "shimlaMallRoad2"
       }
     ]
   }

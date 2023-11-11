@@ -5,13 +5,15 @@ const Image = (props) => {
     path,
     customClass = '',
     hasHoverEffect = false,
-    alt = 'project'
+    alt = 'project',
+    file = ''
   } = props
-  const { image, error } = useImage({ path })
 
+  const { image, error, src } = useImage({ path, file })
+  console.log('src', src)
   return (
     <img
-      src={image}
+      src={src}
       alt={alt}
       className={`image ${customClass} ${hasHoverEffect ? 'image--hover' : ''}`}
     />
