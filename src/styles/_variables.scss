@@ -1,28 +1,21 @@
-:root {
-  //colors
-  --color-primary: #ff8d0f;
-  --color-primary-dark: #ff6f16;
-  --color-secondary: rgb(255, 211, 63);
+@use 'sass:color';
 
-  //hero
-  // --hero-bg-color: rgb(255, 89, 67);
-  // --hero-bg-image: linear-gradient(6deg, #01054b 0%, #1812ce 76%, #191192 100%);
+//colors
+$color-primary: #ff1f9a;
+$color-primary-dark: color.adjust($color-primary, $blackness: 60%);
+$color-primary-light: color.adjust($color-primary, $whiteness: 60%);
 
-  //header
-  --header-bg-color: rgb(255, 89, 67);
+$color-secondary: #0aa5ff;
+$color-secondary-dark: color.adjust($color-secondary, $blackness: 60%);
+$color-secondary-light: color.adjust($color-secondary, $whiteness: 60%);
 
-  //section
-  // --section-bg-color: rgb(248, 214, 228);
+$accent-color: #fffb1f;
 
-  //photos section
-  // --photo-section-bg-color: rgb(255, 255, 255);
+//max width of whole page
+// $max-width: 1200px;
 
-  //max width of whole page
-  --max-width: 1200px;
+$color-light-grey: #e2e2e2;
+$color-dark-grey: #2b2b2b;
 
-  --color-light-grey: #e2e2e2;
-  --color-dark-grey: #2b2b2b;
-
-  --color-white: #ffffff;
-  --color-black: #111;
-}
+$color-white: #ffffff;
+$color-black: #111;

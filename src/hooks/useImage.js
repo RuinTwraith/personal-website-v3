@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 
-const useImage = ({ folder, fileName }) => {
+const useImage = ({ path }) => {
   const [error, setError] = useState(null)
   const [image, setImage] = useState(null)
 
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await import(`../assets/${folder}/${fileName}`)
+        const imagePath = `../assets/${path}`
+        const response = await import(imagePath)
         setImage(response.default)
       } catch (err) {
         setError(err)
@@ -15,11 +16,10 @@ const useImage = ({ folder, fileName }) => {
     }
 
     fetchImage()
-  }, [folder, fileName])
-
+  }, [path])
   return {
     error,
-    image,
+    image
   }
 }
 

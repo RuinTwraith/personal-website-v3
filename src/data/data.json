@@ -1,0 +1,182 @@
+{
+  "projects": {
+    "title": "Projects",
+    "folder": "projects",
+    "description": "Here are a selection of solo projects I've worked on over the past few years, each with its source code available on GitHub. Some of them are live and deployed!",
+    "data": [
+      {
+        "name": "Geo Visualizer",
+        "description": "This project was designed in Adobe XD and developed using React, Strapi and MonogDB. It helps users to look for locations more efficiently and elegantly.",
+        "info": "React, Strapi & MongoDB",
+        "fileName": "geo-visualizer.webp",
+        "github": "https://github.com/RuinTwraith/geo-visualizer",
+        "link": "https://github.com/RuinTwraith/geo-visualizer"
+      },
+      {
+        "name": "Old Portfolio",
+        "description": "This is an old version of my portfolio, made solely using HTML, SASS and Vanilla JavaScript.",
+        "info": "Javascript & SASS",
+        "fileName": "portfolio.webp",
+        "github": "https://github.com/RuinTwraith/personal-website-v2",
+        "link": "https://dibbendukoley.web.app/"
+      },
+      {
+        "name": "Sterling Hotels",
+        "description": "This is a mock website for Sterling Hotels. The UI is developed using pure HTML and SASS. It has various hover effects throughout the website.",
+        "info": "HTML & SASS",
+        "fileName": "sterling-hotels.webp",
+        "github": "https://github.com/RuinTwraith/sterling-hotels",
+        "link": "https://ruin-sterling-hotels.netlify.app/"
+      },
+      {
+        "name": "Explore Inside Photography",
+        "description": "This is a small portfolio website for a photographer. It has working contact form using realtime database of google firebase.",
+        "info": "Javascript & SASS",
+        "fileName": "ei-photography.webp",
+        "github": "https://github.com/RuinTwraith/explore-inside",
+        "link": "https://exploreinsidephotography.web.app/"
+      },
+      {
+        "name": "Covid-19 Tracker",
+        "description": "This website was created to track the last pandemic event Covid-19. It is developed in React and open source API is used to get the data.",
+        "info": "React Project",
+        "fileName": "covid-19.webp",
+        "github": "https://github.com/RuinTwraith/covid19-tracker",
+        "link": "https://covid-19-ruin.web.app/"
+      }
+    ]
+  },
+  "artWorks": {
+    "title": "Art Works",
+    "folder": "artworks",
+    "customClass": "artworks",
+    "description": "The following digital arts are created in Blender3D and Inkscape. I also have an art portfolio in Behance.",
+    "data": [
+      {
+        "name": "Candles",
+        "link": "2020",
+        "fileName": "candle.webp"
+      },
+      {
+        "name": "Chair",
+        "link": "2021",
+        "fileName": "chair.webp"
+      },
+      {
+        "name": "Cherry Blossom",
+        "link": "2022",
+        "fileName": "cherry.webp"
+      },
+      {
+        "name": "Donut",
+        "link": "2020",
+        "fileName": "donut.webp"
+      },
+      {
+        "name": "Neon Sign",
+        "link": "2020",
+        "fileName": "neon.webp"
+      }
+    ]
+  },
+  "photos": {
+    "id": "photos",
+    "title": "My Photos",
+    "folder": "photos",
+    "customClass": "",
+    "description": "Beyond my role as a developer, I'm a passionate traveler, and my camera is an ever-present companion on my journeys. With my reliable DSLR, the Nikon D3300, and the versatile Fujifilm X-S20, I've seized countless breathtaking moments during my adventures.",
+    "data": [
+      {
+        "name": "Mall Road, Shimla",
+        "link": "2021",
+        "fileName": "shimla-mall-road-1.webp"
+      },
+      {
+        "name": "Chirst Church, Shimla",
+        "link": "2020",
+        "fileName": "christ-church.webp"
+      },
+      {
+        "name": "Oberoi Hotel",
+        "link": "2022",
+        "fileName": "oberoi.webp"
+      },
+      {
+        "name": "Rabbits",
+        "link": "2021",
+        "fileName": "rabbit.webp"
+      },
+      {
+        "name": "Dainkund Peak",
+        "link": "2021",
+        "fileName": "dainkund-peak.webp"
+      },
+      {
+        "name": "Bungee Jumping",
+        "link": "2021",
+        "fileName": "bungee.webp"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-3.webp"
+      },
+      {
+        "name": "Haji Ali Dargah",
+        "link": "2020",
+        "fileName": "haji-ali.webp"
+      },
+      {
+        "name": "Seagull",
+        "link": "2020",
+        "fileName": "seagull-2.webp"
+      },
+      {
+        "name": "Rani Jhansi Statue, Shimla",
+        "link": "2020",
+        "fileName": "rani-jhansi.webp"
+      },
+      {
+        "name": "Bokeh",
+        "link": "2021",
+        "fileName": "bokeh.webp"
+      },
+      {
+        "name": "Chamera Dam",
+        "description": "The Chamera Dam impounds the River Ravi and supports the hydroelectricity project in the region.",
+        "link": "2022",
+        "fileName": "chamera-dam.webp"
+      },
+      {
+        "name": "Ganga Aarti",
+        "link": "2022",
+        "fileName": "ganga.webp"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-1.webp"
+      },
+      {
+        "name": "Taj Hotel",
+        "link": "2020",
+        "fileName": "taj-hotel.webp"
+      },
+      {
+        "name": "Shimla",
+        "link": "2021",
+        "fileName": "shimla-2.webp"
+      },
+      {
+        "name": "Seagull",
+        "link": "2022",
+        "fileName": "seagull-1.webp"
+      },
+      {
+        "name": "Mall Road, Shimla",
+        "link": "2021",
+        "fileName": "shimla-mall-road-2.webp"
+      }
+    ]
+  }
+}

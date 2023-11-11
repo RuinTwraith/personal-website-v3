@@ -1,0 +1,31 @@
+@use 'sass:color';
+@import '../../styles/variables.scss';
+
+.footer {
+  font-size: 1.4rem;
+  background: linear-gradient(
+    to bottom,
+    color.adjust($color-secondary-light, $lightness: 10%) 50%,
+    $color-secondary-light
+  );
+  padding: 2rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__left {
+    border-left: 0.4rem solid $color-primary;
+    padding: 1.2rem 0 1.2rem 2rem;
+  }
+
+  &__heading {
+    color: $color-primary-dark;
+  }
+
+  &__designed-by {
+    font-weight: 600;
+  }
+}

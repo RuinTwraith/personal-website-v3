@@ -1,0 +1,74 @@
+@import '../../styles/mixins.scss';
+
+.about {
+  // background: url('../../assets/background/dark-paint.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: linear-gradient(60deg, #030412 40%, #2a0b69 80%, #4a3388);
+
+  &__background {
+    width: 100%;
+    position: absolute;
+  }
+
+  &__container {
+    padding-top: 15rem;
+    z-index: 1;
+  }
+}
+
+.profile {
+  &__container {
+    padding: 4rem;
+    border-radius: 15px;
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: rgba(36, 9, 100, 0.5);
+
+    box-shadow: 4px 4px rgba(36, 9, 100, 0.75);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    & .image {
+      width: 25rem;
+      aspect-ratio: 1/1;
+      border-radius: 10px;
+      box-shadow: 4px 4px rgba($color-primary-light, 0.5);
+
+      @include respond(tab-port) {
+        // background-color: red;
+        position: absolute;
+        top: -23rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 25px;
+      }
+    }
+
+    @include respond(tab-port) {
+      // background-color: red;
+      // flex-direction: column-reverse;
+      margin-top: 23rem;
+      border-radius: 25px;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__line {
+    color: $color-white;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
+    @include respond(tab-small) {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,62 +1,75 @@
+@import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-:root {
-  --web-dev-bg-color: rgba(243, 51, 51, 0.616);
-}
-
 .herobox {
-  // background-color: var(--header-bg-color);
-  // background-image: var(--hero-bg-image);
-  background-color: var(--header-bg-color);
-  // background-color: red;
-  background-image: url('https://images.unsplash.com/photo-1516764987-44e9395d6bfb?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('../../assets/background/night-city.jpg');
   height: 80rem;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 7rem;
   z-index: 0;
-  font-family: 'Rowdies', sans-serif;
 
   &__container {
-    @include page-max-width;
-    color: var(--color-white);
-    margin: 5rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    width: 75%;
+    color: $color-white;
+    margin: 15rem auto;
   }
 
   &__left {
     font-weight: 700;
     text-align: right;
     position: relative;
+    font-family: 'Rowdies', sans-serif;
 
     .web-dev {
-      font-size: 2rem;
-      font-weight: 300;
+      font-size: 2.2rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
       letter-spacing: 0.1rem;
       width: fit-content;
-      padding: 0 1rem;
+      padding: 0.5rem 1.4rem;
+      border-radius: 1rem;
       margin-left: auto;
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
       background: linear-gradient(
-        112deg,
+        120deg,
         transparent 25%,
-        var(--web-dev-bg-color) 25%,
-        var(--web-dev-bg-color) 95%,
-        transparent 95%
+        rgba($color-secondary, 0.4) 50%,
+        rgba($color-secondary, 0.1) 90%,
+        transparent
       );
-      animation: iamspeed 3s infinite cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      animation: iamspeed 2s infinite cubic-bezier(0.73, -0.46, 0.92, 0.75);
     }
+    $font-size: min(15rem, 13vw);
     .first-name,
     .last-name {
       display: block;
-      font-size: 12rem;
       text-transform: uppercase;
-      line-height: 12rem;
+      font-size: $font-size;
+      line-height: $font-size;
       z-index: 2;
-      color: var(--color-white);
+      position: relative;
+      color: $color-white;
+
+      &::before {
+        position: absolute;
+        display: block;
+        font-size: $font-size;
+        line-height: $font-size;
+        text-transform: uppercase;
+        text-align: right;
+        z-index: -1;
+        color: $color-primary;
+      }
+    }
+    .first-name::before {
+      content: 'Dibbendu';
+      top: 0.3rem;
+      left: -0.3rem;
+    }
+    .last-name::before {
+      content: 'Koley';
+      top: 0.3rem;
+      right: 0.3rem;
     }
   }
   &__right {
