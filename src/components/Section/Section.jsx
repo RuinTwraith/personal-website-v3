@@ -1,4 +1,3 @@
-import React from 'react'
 import './section.scss'
 import Card from '../Card'
 import PhotoSection from '../PhotoSection'

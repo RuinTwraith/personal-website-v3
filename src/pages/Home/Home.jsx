@@ -1,5 +1,4 @@
 import Hero from '../../components/Hero'
-import Header from '../../components/Header'
 import Section from '../../components/Section'
 import { projects } from '../../data/data.json'
 
