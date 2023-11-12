@@ -46,6 +46,14 @@
   padding-top: 7rem;
   z-index: 0;
 
+  @include respond(tab-small) {
+    height: 70rem;
+  }
+
+  @include respond(phone-l) {
+    height: 50rem;
+  }
+
   &__container {
     color: $color-white;
     margin: 15rem auto;
@@ -76,8 +84,13 @@
       );
       background-repeat: repeat-x;
       animation: iamspeed 2s infinite cubic-bezier(0.73, -0.46, 0.92, 0.75);
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
     $font-size: min(15rem, 13vw);
+
     .first-name,
     .last-name {
       display: block;
