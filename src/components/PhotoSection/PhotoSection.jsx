@@ -62,7 +62,7 @@ const PhotoSection = ({ data, folder }) => {
             {photos.map((item, i) => (
               <div className="photo__body--img" key={i}>
                 <Image file={item.file} path={`${folder}/${item.fileName}`} />
-                <p className="photo__body--img-caption">{item.name}</p>
+                {/* <p className="photo__body--img-caption">{item.name}</p> */}
               </div>
             ))}
           </div>
